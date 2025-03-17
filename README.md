@@ -24,7 +24,7 @@ cd GramaCuerda
 4. Ejecutar el script en TCL para iniciar la aplicación:
 
 ```bash
-tclsh cli.tcl "01 - potencias de diez (reglas de los exponentes"
+tclsh cli.tcl "01 - potencias de diez (reglas de los exponentes)"
 ```
 
 debes especificar el titulo de la opcion completo y entre comillas
