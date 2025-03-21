@@ -8,17 +8,18 @@ proc mostrar_ayuda {} {
     puts "Uso: --tclsh cli.tcl-- seguido del nombre de la opción (sin especificar el asterisco)" 
     puts "Opciones disponibles:"
     puts ""
-    puts "Las opciones disponibles que comienzan con un numero por ejemplo la primera comienza con cero-uno espacio guion espacio potencias de diez etcetera"
-    puts "se especifican entre comillas, en unix es muy facil asignar espacio a los titulos de los documentos, simplemente especificas el titulo entre comillas y te permite utilizar un formato mas legible"
+    puts "Las opciones disponibles que comienzan con un número, por ejemplo, la primera comienza con 'cero-uno espacio guion espacio potencias de diez' etcétera."
+    puts "Se especifican entre comillas, en Unix es muy fácil asignar espacio a los títulos de los documentos, simplemente especificas el título entre comillas y te permite utilizar un formato más legible."
+    puts ""
 
+    # Buscar scripts disponibles en la carpeta 'scripts' y ordenarlos alfabéticamente
+    set scripts [lsort [glob -nocomplain -type f $::scripts_dir/*.tcl]]
 
-puts ""
-
-    # Buscar scripts disponibles en la carpeta 'scripts'
-    foreach file [glob -nocomplain -type f $::scripts_dir/*.tcl] {
+    foreach file $scripts {
         set name [file rootname [file tail $file]]
         puts "  * $name"
     }
+    
     puts "  -a, --ayuda"
 }
 
@@ -36,6 +37,6 @@ set script_path "$scripts_dir/$opcion.tcl"
 if {[file exists $script_path]} {
     source $script_path
 } else {
-    puts "❌ Error: La opción '$opcion' no existe. Usa -h para ver las opciones disponibles."
+    puts "❌ Error: La opción '$opcion' no existe. Usa -a o --ayuda para ver las opciones disponibles."
     exit 1
 }
