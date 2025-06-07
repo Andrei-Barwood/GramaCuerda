@@ -8,7 +8,7 @@ proc mostrar_ayuda {} {
     puts "Uso: --tclsh cli.tcl-- seguido del nombre de la opción (sin especificar el asterisco)" 
     puts "Opciones disponibles:"
     puts ""
-    puts "Las opciones disponibles que comienzan con un número, por ejemplo, la primera comienza con 'cero-uno espacio guion espacio potencias de diez' etcétera."
+    puts "Las opciones disponibles que comienzan con un número, por ejemplo, la primera comienza con '01 espacio guion espacio potencias de diez' etcétera."
     puts "Se especifican entre comillas, en Unix es muy fácil asignar espacio a los títulos de los documentos, simplemente especificas el título entre comillas y te permite utilizar un formato más legible."
     puts ""
 
