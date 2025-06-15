@@ -69,6 +69,14 @@ Se especifican entre comillas, en Unix es muy fácil asignar espacio a los títu
   -a, --ayuda
 ```
 
+para actualizar la app y obtener los nuevos conceptos que voy agregando puedes escribir lo siguiente (dentro de tu directorio GramaCuerda)
+
+```bash
+cd GramaCuerda
+git pull
+```
+
+
 
 
 Si tienes alguna duda o problema, no dudes en enviarme un mensaje privado.
