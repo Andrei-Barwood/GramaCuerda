@@ -94,6 +94,8 @@ puts "
 "
 puts "⚡ Simulador de ejemplos sobre circuitos en paralelo – Darden Clean Energy Project 🔋🌞\n"
 puts "Características de la planta: 1.150 MW, 3.1 millones de paneles solares, 4500 kWh de baterías.\n"
+puts "Recuerda que si incluyes mas resistencias la resistencia total disminuye porque están en paralelo, abrá mayor flujo de corriente."
+
 
 # Bucle principal
 set i 1
