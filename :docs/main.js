@@ -1,5 +1,5 @@
 // Import the Wacl library
-import { Wacl } from 'https://wacl.io/wacl.mjs';
+import { Wacl } from './wacl.mjs';
 
 // 1. Initialize the Xterm.js Terminal
 const term = new Terminal({
